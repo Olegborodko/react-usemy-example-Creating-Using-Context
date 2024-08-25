@@ -1,9 +1,13 @@
+import Page from './Page';
+import './index.css';
+
+import ThemeContextProvider from './ThemeContextProvider';
+
 function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+  return <ThemeContextProvider>
+  <Page />
+  </ThemeContextProvider>
+  ;
 }
 
 export default App;
